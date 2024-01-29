@@ -91,9 +91,11 @@ function App() {
           <td>Banana</td>
         </tr>
         <tr>
-          <td>{AllAppleSold}</td>
+          <td>{AllAppleSold}</td> 
           <td>{AllOrangeSold}</td>
           <td>{AllBananaSold}</td>
+          {/* this functions re-execute each time react re-render, but state does not 
+          change. useMemo help to prevent. using dependency solve the proplem */}
         </tr>
       </table>
 
